@@ -1,30 +1,7 @@
-INDEX VERSION 1.127+/Users/admin/ImageFilter/.metadata/.plugins/org.eclipse.jdt.core
-3261838026.index
-1384487945.index
-3712507179.index
-427724483.index
-2528377079.index
+INDEX VERSION 1.127+/Users/mmayo/ImageFilter/.metadata/.plugins/org.eclipse.jdt.core
 46615338.index
-3588163952.index
-3302703152.index
-3394953001.index
-2982917733.index
-1271342938.index
-2220222405.index
-156905802.index
-1060078548.index
-1833648217.index
-2545238116.index
 500695902.index
-3321539481.index
-1628143439.index
-2328043753.index
+427724483.index
 904919472.index
-3266567714.index
-4121012013.index
-1819685514.index
-2399042292.index
-1213662472.index
-3402582055.index
-925495247.index
-3513380958.index
+2528377079.index
+3588163952.index
