@@ -1,0 +1,4 @@
+
+public class ImageFilter_PHOG extends ImageFilter_Simple {
+
+}

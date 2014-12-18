@@ -1,0 +1,27 @@
+import java.awt.image.BufferedImage;
+
+import net.semanticmetadata.lire.imageanalysis.BasicFeatures;
+
+
+public class ImageFilter_PHOG extends ImageFilter_Simple {
+
+	private static final long serialVersionUID = 3969180123053302460L;
+
+	public String globalInfo() {
+		return "A batch filter for extracting PHOG features from images.";
+	}
+	
+	protected int getNumFeatures(){
+		return 8;
+	}
+	protected double[] getFeatures(BufferedImage img){
+		PHOG features=new PHOG();
+		features.extract(img);
+		return features.getDoubleHistogram();
+	}
+	
+	public static void main(String[] args) {
+		runFilter(new ImageFilter_PHOG(), args);
+	}
+	
+}

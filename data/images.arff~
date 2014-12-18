@@ -1,0 +1,6 @@
+@relation images
+@attribute filename string
+@attribute class {cat,dog}
+@data
+file1.png,cat
+file2.png,dog
