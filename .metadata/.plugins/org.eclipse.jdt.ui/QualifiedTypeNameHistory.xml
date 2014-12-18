@@ -6,4 +6,5 @@
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.BasicFeatures"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.ColorLayout"/>
+<fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.EdgeHistogram"/>
 </qualifiedTypeNameHistroy>

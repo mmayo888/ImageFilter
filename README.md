@@ -2,10 +2,10 @@
 
 ##Preparing the datasets
 
-Datasets should contain a minimum of two attributes: a string (which stores the filenames of the images) and a class, in an ARFF file.
-Additional attributes can also be added and they will be copied unchanged by the filter.
+Datasets (in ARFF format) should contain a minimum of two attributes: a string (which stores the filenames of the images) and a class.
+Additional attributes may also be in the dataset and they will be copied unchanged by the filter.
 
-Example, this is dogs.arff from the data folder:
+For example, this is dogs.arff from the data folder:
 ````
 @relation dogs
 @attribute filename string
@@ -28,22 +28,26 @@ img_german_shorthaired_49.jpg,GERMAN_SHORTHAIRED
 
 ````
 
-#Using the filters from the command line
+##Using the filters from the command line
 Run the image filter, specifying your ARFF file with the image filenames and the class index as the input. The output should be the name of the file where you want the images stored, e.g.:
 ````
-java -cp classpath_to_weka weka.filters.unsupervised.instance.imagefilter.BasicImageFeatures -i dogs.arff -c 2 -o dogs_features.arff
+java -cp classpath_to_weka weka.filters.supervised.instance.imagefilter.BasicImageFeatures -i dogs.arff -c 2 -o dogs_features.arff
 
 ````
 
-#Performing an image classification experiment from the command line
+##Performing an image classification experiment from the command line
 Use the feature-extracted ARFF file to run experiments, e.g.:
 
 ````
 java -cp classpath_to_weka weka.classifiers.functions.SMO -t ~/Desktop/dogs_features.arff
 ````
 
-# Sources for the software and data used in this repository
+##Sources for the software and data used in this repository
 
 LIRE 0.9.3 https://code.google.com/p/lire/
+
 WEKA 3.7.12 http://www.cs.waikato.ac.nz/ml/weka/
+
+Butterfly & birds images http://www-cvr.ai.uiuc.edu/ponce_grp/data/
+
 Oxford IIIT Pet Dataset http://www.robots.ox.ac.uk/~vgg/data/pets/

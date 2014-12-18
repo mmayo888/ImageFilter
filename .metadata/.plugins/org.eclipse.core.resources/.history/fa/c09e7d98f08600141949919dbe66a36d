@@ -1,0 +1,5 @@
+package weka.filters.supervised.instance.imagefilter;
+
+public class EdgeHistogramImageFeatures {
+
+}
