@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.BasicFeatures"/>
+<fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.ColorLayout"/>
+</qualifiedTypeNameHistroy>
