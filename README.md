@@ -1,12 +1,15 @@
 
-Command Line Examples
-=====================
+Usage Examples
+==============
 
-
+````
 java -cp lib/*:bin/  weka.filters.unsupervised.instance.imagefilter.BasicImageFeatures -i ../data/images.arff -c last -o ~/Desktop/basic.arff
 
-java -cp lib/*:bin/  weka.filters.unsupervised.instance.imagefilter.ColorLayoutImageFeatures -i ../data/images.arff -c last -o ~/Desktop/cl.arff
+````
 
+````
+java -cp lib/*:bin/  weka.filters.unsupervised.instance.imagefilter.ColorLayoutImageFeatures -i ../data/images.arff -c last -o ~/Desktop/cl.arff
+````
 
 
 
