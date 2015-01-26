@@ -10,5 +10,5 @@
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="weka.filters.supervised.instance.imagefilter.EdgeHistogramImageFeatures"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-i dogs.arff -c last"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ImageFilter"/>
-<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/Users/mmayo/ImageFilter/data/dogs"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/Users/mmayo/Documents/work/ImageFilter/data/dogs"/>
 </launchConfiguration>

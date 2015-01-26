@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;EdgeHistogramImageFeatures.java&quot; tooltip=&quot;ImageFilter/src/weka/filters/supervised/instance/imagefilter/EdgeHistogramImageFeatures.java&quot;>&#xA;&lt;persistable path=&quot;/ImageFilter/src/weka/filters/supervised/instance/imagefilter/EdgeHistogramImageFeatures.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ImageFilter_PHOG.java&quot; tooltip=&quot;ImageFilter/src/ImageFilter_PHOG.java&quot;>&#xA;&lt;persistable path=&quot;/ImageFilter/src/ImageFilter_PHOG.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ImageFilter.java&quot; tooltip=&quot;ImageFilter/src/ImageFilter.java&quot;>&#xA;&lt;persistable path=&quot;/ImageFilter/src/ImageFilter.java&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_EGJjIYZwEeS6DIMRvSQgsQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_GARtgYZwEeS6DIMRvSQgsQ" label="%trimmedwindow.label.eclipseSDK" x="81" y="53" width="1298" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_EGJjIYZwEeS6DIMRvSQgsQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_GARtgYZwEeS6DIMRvSQgsQ" label="%trimmedwindow.label.eclipseSDK" x="109" y="59" width="1298" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workingSets/>"/>
@@ -150,7 +150,7 @@
         <tags>EditorStack</tags>
         <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_tHW2sIZwEeS6DIMRvSQgsQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="BasicImageFeatures.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BasicImageFeatures.java&quot; partName=&quot;BasicImageFeatures.java&quot; title=&quot;BasicImageFeatures.java&quot; tooltip=&quot;ImageFilter/src/weka/filters/supervised/instance/imagefilter/BasicImageFeatures.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ImageFilter/src/weka/filters/supervised/instance/imagefilter/BasicImageFeatures.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;876&quot; selectionTopPixel=&quot;53&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BasicImageFeatures.java&quot; partName=&quot;BasicImageFeatures.java&quot; title=&quot;BasicImageFeatures.java&quot; tooltip=&quot;ImageFilter/src/weka/filters/supervised/instance/imagefilter/BasicImageFeatures.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/ImageFilter/src/weka/filters/supervised/instance/imagefilter/BasicImageFeatures.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;876&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -284,7 +284,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GeWwoIZwEeS6DIMRvSQgsQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_QrJWgIb5EeSHDJwuHm3apA" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_EJOsZoZwEeS6DIMRvSQgsQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_pgv6oqWkEeSQ7cKCkqnOoQ" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_EJOsZoZwEeS6DIMRvSQgsQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GeXXsIZwEeS6DIMRvSQgsQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -308,7 +308,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GeX-wIZwEeS6DIMRvSQgsQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_QrNn8Ib5EeSHDJwuHm3apA" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_EJE7WYZwEeS6DIMRvSQgsQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_pg0MEKWkEeSQ7cKCkqnOoQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_EJE7WYZwEeS6DIMRvSQgsQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_GeX-wYZwEeS6DIMRvSQgsQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -611,7 +611,7 @@
     <bindings xmi:id="_FtsvUYbqEeSqCbs4_SM5lA" keySequence="ALT+COMMAND+X P" command="_FtBZ64bqEeSqCbs4_SM5lA">
       <tags>platform:cocoa</tags>
     </bindings>
-    <bindings xmi:id="_QZrzEIb5EeSHDJwuHm3apA" keySequence="COMMAND+CTRL+F" command="_EP6jIYZwEeS6DIMRvSQgsQ"/>
+    <bindings xmi:id="_pNVPYaWkEeSQ7cKCkqnOoQ" keySequence="COMMAND+CTRL+F" command="_EP6jIYZwEeS6DIMRvSQgsQ"/>
   </bindingTables>
   <bindingTables xmi:id="_ENKKEYZwEeS6DIMRvSQgsQ" elementId="org.eclipse.ui.textEditorScope" bindingContext="_EJo8C4ZwEeS6DIMRvSQgsQ">
     <bindings xmi:id="_ENKxIIZwEeS6DIMRvSQgsQ" keySequence="COMMAND+SHIFT+NUMPAD_MULTIPLY" command="_EJE7ZoZwEeS6DIMRvSQgsQ"/>
@@ -809,7 +809,7 @@
     <bindings xmi:id="_EN3Us4ZwEeS6DIMRvSQgsQ" keySequence="CTRL+D" command="_EJJz6IZwEeS6DIMRvSQgsQ"/>
   </bindingTables>
   <bindingTables xmi:id="_EP7xQIZwEeS6DIMRvSQgsQ" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_EGJjJoZwEeS6DIMRvSQgsQ">
-    <bindings xmi:id="_QZrzEYb5EeSHDJwuHm3apA" keySequence="M1+W" command="_EP7KMoZwEeS6DIMRvSQgsQ"/>
+    <bindings xmi:id="_pNV2cKWkEeSQ7cKCkqnOoQ" keySequence="M1+W" command="_EP7KMoZwEeS6DIMRvSQgsQ"/>
   </bindingTables>
   <bindingTables xmi:id="_H2u40YZwEeS6DIMRvSQgsQ" bindingContext="_H2u40IZwEeS6DIMRvSQgsQ"/>
   <bindingTables xmi:id="_H2u404ZwEeS6DIMRvSQgsQ" bindingContext="_H2u40oZwEeS6DIMRvSQgsQ"/>
