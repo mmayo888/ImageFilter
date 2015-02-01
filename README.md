@@ -81,7 +81,7 @@ java -cp class path_to_weka weka.filters.unsupervised.attribute.RemoveType -T st
 Use the feature-extracted ARFF file to run experiments, e.g.:
 
 ````
-java -cp classpath_to_weka weka.classifiers.functions.SMO -t ~/Desktop/dogs_features_nostrings.arff
+java -cp classpath_to_weka weka.classifiers.functions.SMO -t dogs_features_nostrings.arff
 ````
 
 ##Sources for the software and data used in this repository
