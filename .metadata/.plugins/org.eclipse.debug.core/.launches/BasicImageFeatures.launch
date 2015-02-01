@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/ImageFilter/src/weka/filters/supervised/instance/imagefilter/BasicImageFeatures.java"/>
+<listEntry value="/ImageFilter/src/weka/filters/unsupervised/instance/imagefilter/BasicImageFeatures.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
 <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="weka.filters.supervised.instance.imagefilter.BasicImageFeatures"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-i dogs.arff -c last"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="weka.filters.unsupervised.instance.imagefilter.BasicImageFeatures"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-i dogs.arff"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ImageFilter"/>
 <stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/Users/mmayo/Documents/work/ImageFilter/data/dogs"/>
 </launchConfiguration>

@@ -1,0 +1,7 @@
+package weka.filters.unsupervised.instance.imagefilter;
+
+import SimpleBatchFilter;
+
+public abstract class AbstractImageFeatures extends SimpleBatchFilter {
+
+}

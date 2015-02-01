@@ -31,11 +31,15 @@ img_german_shorthaired_49.jpg,GERMAN_SHORTHAIRED
 ##Using the filters from the command line
 Run the image filter, specifying your ARFF file with the image filenames and the class index as the input. The output should be the name of the file where you want the images stored, e.g.:
 ````
-java -cp classpath_to_weka weka.filters.supervised.instance.imagefilter.BasicImageFeatures -i dogs.arff -c 2 -o dogs_features.arff
+java -cp classpath_to_weka weka.filters.unsupervised.instance.imagefilter.BasicImageFeatures -i dogs.arff -o dogs_features.arff
 
 ````
 
-##Performing an image classification experiment from the command line
+Note: In dogs.arff above, filenames are *not* fully qualified.
+Therefore you should change working directory to the directory containing the images before executing the above command.
+Alternatively, it is possible to replace each filename with its fully qualified name and run the filtering command from anywhere.
+
+##To perform an image classification experiment from the command line
 Use the feature-extracted ARFF file to run experiments, e.g.:
 
 ````
