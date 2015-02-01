@@ -4,7 +4,11 @@
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.BasicFeatures"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.ColorLayout"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.EdgeHistogram"/>
+<fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.BasicFeatures"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="java.util.Enumeration"/>
+<fullyQualifiedTypeName name="weka.core.Option"/>
+<fullyQualifiedTypeName name="weka.core.Utils"/>
 </qualifiedTypeNameHistroy>
