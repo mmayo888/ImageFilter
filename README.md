@@ -36,10 +36,12 @@ For example, here’s a screenshot showing dogs.arff open in WEKA with the Basic
 
 ![](before.jpg)
 
+You can find the image filters by clicking the “Choose” button.
+Once the filter is selected, make sure that you set the image directory option to the directory containing the images.
 
-Clicking “Apply” will add new numeric features to the dataset, one for each feature:
+Clicking “Apply” after will add new numeric features to the dataset, one for each feature:
 
-![](before.jpg)
+![](after.jpg)
 
 You can then remove the first attribute (the filename) and run some WEKA experiments on the dataset.
 
