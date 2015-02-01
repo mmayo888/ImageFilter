@@ -28,11 +28,14 @@ img_german_shorthaired_49.jpg,GERMAN_SHORTHAIRED
 ````
 
 ##Using image filters from the GUI
-**TODO**
+Ensure that you have the ImageFilters package installed.
+Then you can run WEKA as normal and open an ARFF file containing image filenames such as the one above.
+** TODO **
 
 ##Using image filters from the command line
 All image filters can be run from the command line.
 You will need to specify the following on the command line:
+
 1. The filename to the ARFF file that contains the image filenames (specified using -i)
 2. The filename to the ARFF file that the image features will be written to (specified using -o)
 3. The name of the directory containing the images (specified using -D); this is only required if the working directory does not contain the images
@@ -103,7 +106,8 @@ rm dogs_features.arff
 
 
 ##Sources for the software and data used in this repository
-LIRE 0.9.3 https://code.google.com/p/lire/
-WEKA 3.7.12 http://www.cs.waikato.ac.nz/ml/weka/
-Butterfly & birds images http://www-cvr.ai.uiuc.edu/ponce_grp/data/
-Oxford IIIT Pet Dataset http://www.robots.ox.ac.uk/~vgg/data/pets/
+
+* LIRE 0.9.3 https://code.google.com/p/lire/
+* WEKA 3.7.12 http://www.cs.waikato.ac.nz/ml/weka/
+* Butterfly & birds images http://www-cvr.ai.uiuc.edu/ponce_grp/data/
+* Oxford IIIT Pet Dataset http://www.robots.ox.ac.uk/~vgg/data/pets/
