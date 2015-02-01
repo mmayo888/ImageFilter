@@ -17,6 +17,9 @@ public abstract class AbstractImageFeatures extends SimpleBatchFilter {
 
 	private static final long serialVersionUID = -407198591679465350L;
 
+	// A flag indicating whether or not to delete the string filename attribute
+	private boolean deleteFilenameAttribute=true;
+	
 	// Global info method for describing the filter
 	public String globalInfo() {
 		return "An abstract batch filter for extracting features of any type from images.";
@@ -40,6 +43,7 @@ public abstract class AbstractImageFeatures extends SimpleBatchFilter {
 		for (int index = numFeatures-1; index >= 0; index--) {
 			result.insertAttributeAt(new Attribute(getFeatureNamePrefix() + index),1);
 		}
+		System.out.println(result);
 		return result;
 	}
 
@@ -67,21 +71,17 @@ public abstract class AbstractImageFeatures extends SimpleBatchFilter {
 			// extract features from the buffered image
 			double[] features=getFeatures(img);
 			// create the final feature vector and new instance
-			double[] values = new double[result.numAttributes()];
-			// copy the features to the values array
-			int values_index=1; // leave first value for the filename
+			double[] values = new double[1+result.numAttributes()];
+			
+			// Copy the features from features to values
 			for (int index=0; index<features.length;index++)
-				values[values_index++]=features[index];
-			// copy any additional attributes from the old instance to values
+				values[index+1]=features[index];
+			// Copy any additional attributes from the old instance to values
 			for (int index=1; index<inst.numAttributes();index++)
-				values[values_index++]=inst.instance(example_index).value(index);
-			// create and an instance for the new dataset
-			DenseInstance newInst=new DenseInstance(1,values);
-			newInst.setDataset(result);
-			// add the filename
-			newInst.setValue(0,filename);
-			// done
-			result.add(newInst);
+				values[features.length+index-1]=inst.instance(example_index).value(index);
+			
+			// Done -- create and add an instance to the new dataset
+			result.add(new DenseInstance(1, values));
 		}
 		// done -- return new dataset
 		return result;

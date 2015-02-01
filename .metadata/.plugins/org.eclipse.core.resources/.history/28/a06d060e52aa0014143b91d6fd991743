@@ -17,6 +17,9 @@ public abstract class AbstractImageFeatures extends SimpleBatchFilter {
 
 	private static final long serialVersionUID = -407198591679465350L;
 
+	// A flag indicating whether or not to delete the string filename attribute
+	private boolean deleteFilenameAttribute=true;
+	
 	// Global info method for describing the filter
 	public String globalInfo() {
 		return "An abstract batch filter for extracting features of any type from images.";
@@ -69,7 +72,7 @@ public abstract class AbstractImageFeatures extends SimpleBatchFilter {
 			// create the final feature vector and new instance
 			double[] values = new double[result.numAttributes()];
 			// copy the features to the values array
-			int values_index=1; // leave first value for the filename
+			int values_index=1;
 			for (int index=0; index<features.length;index++)
 				values[values_index++]=features[index];
 			// copy any additional attributes from the old instance to values

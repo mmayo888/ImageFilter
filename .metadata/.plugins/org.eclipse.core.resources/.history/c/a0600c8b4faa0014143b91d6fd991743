@@ -18,24 +18,29 @@ public class BasicImageFeatures extends AbstractImageFeatures {
 
 	private static final long serialVersionUID = 8658527406486139573L;
 
+	// Global info method for describing the filter
 	public String globalInfo() {
 		return "A batch filter for extracting eight basic statistical features from images.";
 	}
 
+	// Each subclass *MUST* override this method so that the number of produced features is known!
 	protected int getNumFeatures(){
 		return 8;
 	}
 	
+	// Each subclass *MUST* override this method by returning a unique feature name prefix!
 	protected String getFeatureNamePrefix(){
 		return "B";
 	}
 	
+	// Each subclass *MUST* override this method
 	protected double[] getFeatures(BufferedImage img){
 		BasicFeatures features=new BasicFeatures();
 		features.extract(img);
 		return features.getDoubleHistogram();
 	}
 	
+	// Main method
 	public static void main(String[] args) {
 		runFilter(new BasicImageFeatures(), args);
 	}

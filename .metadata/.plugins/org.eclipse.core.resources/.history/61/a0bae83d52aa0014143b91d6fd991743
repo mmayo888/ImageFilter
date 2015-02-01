@@ -17,6 +17,9 @@ public abstract class AbstractImageFeatures extends SimpleBatchFilter {
 
 	private static final long serialVersionUID = -407198591679465350L;
 
+	// A flag indicating whether or not to delete the string filename attribute
+	private boolean deleteFilenameAttribute=false;
+	
 	// Global info method for describing the filter
 	public String globalInfo() {
 		return "An abstract batch filter for extracting features of any type from images.";
@@ -40,6 +43,7 @@ public abstract class AbstractImageFeatures extends SimpleBatchFilter {
 		for (int index = numFeatures-1; index >= 0; index--) {
 			result.insertAttributeAt(new Attribute(getFeatureNamePrefix() + index),1);
 		}
+		if (deleteFilenameAttribute) result.deleteAttributeAt(0);
 		return result;
 	}
 
@@ -84,6 +88,7 @@ public abstract class AbstractImageFeatures extends SimpleBatchFilter {
 			result.add(newInst);
 		}
 		// done -- return new dataset
+		if (deleteFilenameAttribute) result.deleteAttributeAt(0);
 		return result;
 	}
 
