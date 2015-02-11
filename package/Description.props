@@ -29,26 +29,24 @@ License=GPL 2.0|Mozilla
 Description=A set of filters for converting images into fixed feature vectors for image classification experiments.
 
 # Package URL for obtaining the package archive (required)
-PackageURL=http://somewhere.net/weka/funkyPackage.zip?download
+PackageURL=https://github.com/mmayo888/ImageFilter/raw/master/package/ImageFilter.zip
 
 # URL for further information
-URL=http://somewhere.net/funkyResearchInfo.html
+URL=https://github.com/mmayo888/ImageFilter/blob/master/README.md
 
 # Enhances various other packages ?
-Enhances=packageName1,packageName2,...
+Enhances=
 
 # Related to other packages?
-Related=packageName1,packageName2,...
+Related=
 
 # Dependencies (format: packageName (equality/inequality version_number)
-Depends=weka (>=3.7.1),packageName1 (=x.y.z), packageName2 (>u.v.w|<=x.y.z),...
+Depends=weka (>=3.7.12)
 
 # Message to display in installation. Can be used to provide
 # special instructions (e.g. manual stuff needed to complete
 # the installation process). (optional).
-#MessageToDisplayOnInstallation=Funky package requires some extra\n\
- stuff to be installed after installing this package. You will\n\
- need to blah, blah, blah in order to blah, blah, blah...
+#MessageToDisplayOnInstallation=
 
 # Prevent package from being loaded by Weka if the named
 # files/directories are not present (relative to the package's
