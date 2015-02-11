@@ -29,7 +29,7 @@ License=GPL 2.0|Mozilla
 Description=A set of filters for converting images into fixed feature vectors for image classification experiments.
 
 # Package URL for obtaining the package archive (required)
-PackageURL=https://github.com/mmayo888/ImageFilter/raw/master/package/ImageFilter.zip
+PackageURL=https://github.com/mmayo888/ImageFilter/blob/master/package/ImageFilter.zip?raw=true
 
 # URL for further information
 URL=https://github.com/mmayo888/ImageFilter/blob/master/README.md

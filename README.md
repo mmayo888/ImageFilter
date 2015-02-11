@@ -120,7 +120,7 @@ rm dogs_features.arff
 
 ##Sources for the software and data used in this repository
 
-A small subset of the image datasets can be downloaded from https://github.com/mmayo888/ImageFilter/raw/master/data.zip.
+A small subset of the image datasets for testing the filters can be downloaded from https://github.com/mmayo888/ImageFilter/blob/master/data.zip?raw=true.
 
 ###Original sources:
 * LIRE 0.9.3 https://code.google.com/p/lire/
