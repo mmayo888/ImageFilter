@@ -688,3 +688,13 @@ Contains: Resource is out of sync with the file system: '/ImageFilter/src/weka/f
 !MESSAGE Problems encountered while deleting resources.
 !SUBENTRY 4 org.eclipse.core.resources 4 274 2015-02-12 10:33:37.329
 !MESSAGE Resource is out of sync with the file system: '/ImageFilter/src/weka/filters/supervised/instance/.DS_Store'.
+!SESSION 2015-02-12 10:57:14.204 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.8.0_20
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -keyring /Users/mmayo/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -keyring /Users/mmayo/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-02-12 10:57:19.592
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
