@@ -120,6 +120,9 @@ rm dogs_features.arff
 
 ##Sources for the software and data used in this repository
 
+A small subset of the image datasets can be downloaded from https://github.com/mmayo888/ImageFilter/raw/master/data.zip.
+
+###Original sources:
 * LIRE 0.9.3 https://code.google.com/p/lire/
 * WEKA 3.7.12 http://www.cs.waikato.ac.nz/ml/weka/
 * Butterfly & birds images http://www-cvr.ai.uiuc.edu/ponce_grp/data/
