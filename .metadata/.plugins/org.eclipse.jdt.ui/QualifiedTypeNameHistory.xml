@@ -11,4 +11,5 @@
 <fullyQualifiedTypeName name="java.util.Enumeration"/>
 <fullyQualifiedTypeName name="weka.core.Option"/>
 <fullyQualifiedTypeName name="weka.core.Utils"/>
+<fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.LireFeature"/>
 </qualifiedTypeNameHistroy>

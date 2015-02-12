@@ -9,24 +9,30 @@ public class ColorLayoutImageFeatures extends AbstractImageFeatures {
 
 	private static final long serialVersionUID = 3969180123053302460L;
 
-	public String globalInfo() {
-		return "A batch filter for extracting MPEG7 color layout features from images.";
+	protected ColorLayout features;
+	
+	public ColorLayoutImageFeatures(){
+		super();
+		features=new ColorLayout();
 	}
 	
 	protected int getNumFeatures(){
-		return 120;
+		return features.getDoubleHistogram().length;
 	}
 	
 	protected String getFeatureNamePrefix(){
-		return "CL";
+		return features.getFeatureName();
 	}
 	
 	protected double[] getFeatures(BufferedImage img){
-		ColorLayout features=new ColorLayout();
 		features.extract(img);
 		return features.getDoubleHistogram();
 	}
 	
+	public String globalInfo() {
+		return "A batch filter for extracting MPEG7 color layout features from images.";
+	}
+
 	public static void main(String[] args) {
 		runFilter(new ColorLayoutImageFeatures(), args);
 	}

@@ -1,0 +1,46 @@
+package weka.filters.unsupervised.instance.imagefilter;
+
+import java.awt.image.BufferedImage;
+
+import net.semanticmetadata.lire.imageanalysis.ColorLayout;
+import net.semanticmetadata.lire.imageanalysis.LireFeature;
+
+
+public class ColorLayoutImageFeatures extends AbstractImageFeatures {
+
+	private static final long serialVersionUID = 3969180123053302460L;
+
+	private LireFeature features;
+	
+	public ColorLayoutImageFeatures(){
+		super();
+		features=getFeatureExtractor();
+	}
+	
+	
+	public String globalInfo() {
+		return "A batch filter for extracting MPEG7 color layout features from images.";
+	}
+	
+	protected int getNumFeatures(){
+		return features.getDoubleHistogram().length;
+	}
+	
+	protected String getFeatureNamePrefix(){
+		return features.getFeatureName();
+	}
+	
+	protected double[] getFeatures(BufferedImage img){
+		features.extract(img);
+		return features.getDoubleHistogram();
+	}
+	
+	protected LireFeature getFeatureExtractor(){
+		return new ColorLayout();
+	}
+	
+	public static void main(String[] args) {
+		runFilter(new ColorLayoutImageFeatures(), args);
+	}
+	
+}
