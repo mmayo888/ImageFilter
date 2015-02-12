@@ -7,7 +7,7 @@
  * and the all string attributes are removed.
  */
 
-package weka.filters.unsupervised.instance.imagefilter;
+package weka.filters.unsupervised.instance.imageFilter;
 
 import java.awt.image.BufferedImage;
 

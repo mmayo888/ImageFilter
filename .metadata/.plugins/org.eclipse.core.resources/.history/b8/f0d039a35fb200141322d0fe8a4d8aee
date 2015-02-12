@@ -1,4 +1,4 @@
-package weka.filters.unsupervised.instance.imagefilter;
+package weka.filters.unsupervised.instance.imageFilter;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
