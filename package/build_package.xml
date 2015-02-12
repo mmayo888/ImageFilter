@@ -5,7 +5,7 @@
 
    Type ant -projecthelp for targets and descriptions.
 
-   $Revision: 7301 $
+   $Revision: 6855 $
   ===========================================================================
 -->
 
@@ -157,7 +157,7 @@
     </jar>
   </target>
 
-  <target name="make_package" depends="clean, exejar" description="Make the package zip file. Run with -Dpackage=[package name]">
+  <target name="make_package" depends="exejar" description="Make the package zip file. Run with -Dpackage=[package name]">
     <mkdir dir="${dist}/${package}"/>
     <copy todir="${dist}/${package}">
       <fileset dir="${dist}">
@@ -170,6 +170,8 @@
       </fileset>
     </delete>
     <copy file="Description.props"
+          todir="${dist}/${package}"/>
+    <copy file="GenericPropertiesCreator.props"
           todir="${dist}/${package}"/>
     <mkdir dir="${dist}/${package}/lib"/>
     <copy todir="${dist}/${package}/lib" >

@@ -1,0 +1,11 @@
+# Customises the list of options given by the GenericObjectEditor
+# for various superclasses.
+#
+# Version: $Revision: 11319 $
+
+# Whether to use the dynamic approach or not (true|false). In case of
+# "false" the old GenericObjectEditor.props file is used:
+
+# Lists the Filters-Packages I want to choose from
+weka.filters.Filter= \
+ weka.filters.unsupervised.instance.imagefilter

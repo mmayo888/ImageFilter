@@ -17,6 +17,7 @@ cp -r ../ImageFilter/lib ImageFilter/
 
 # add configuration files -- hope they have been updated!
 cp Description.props ImageFilter/
+cp GenericPropertiesCreator.props ImageFilter/
 cp build_package.xml ImageFilter/
 
 # remove unnecessary files from the package
