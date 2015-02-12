@@ -1,0 +1,25 @@
+package weka.filters.unsupervised.instance.imagefilter;
+
+import java.awt.image.BufferedImage;
+
+public class GaborImageFeatures extends AbstractImageFeatures {
+
+	@Override
+	protected int getNumFeatures() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	protected String getFeatureNamePrefix() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected double[] getFeatures(BufferedImage img) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

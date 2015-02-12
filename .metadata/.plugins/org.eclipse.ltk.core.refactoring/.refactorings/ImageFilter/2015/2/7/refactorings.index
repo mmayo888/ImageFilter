@@ -5,3 +5,13 @@
 1423708455830	Rename package 'weka.filters.unsupervised.instance.imageFilter'
 1423769671949	Rename package 'weka.filters.unsupervised.instance.imageFilter'
 1423770317079	Delete element
+1423774291801	Rename type 'BinaryPatternsPyramidImageFeature'
+1423774809720	Delete element
+1423775650639	Rename type 'BinaryPatternsPyramidImageFeatures'
+1423775684853	Rename type 'ColorLayoutImageFeatures'
+1423775699212	Rename type 'EdgeHistogramImageFeatures'
+1423775717604	Rename type 'GaborImageFeatures'
+1423775731630	Rename type 'PHOGImageFeatures'
+1423775745992	Rename type 'AbstractImageFeatures'
+1423778051223	Delete element
+1423779821449	Rename type 'FCTHImageFilter'

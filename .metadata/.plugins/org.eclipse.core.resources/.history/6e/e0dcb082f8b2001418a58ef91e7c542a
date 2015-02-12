@@ -1,0 +1,7 @@
+package weka.filters.unsupervised.instance.imagefilter;
+
+import AbstyractImageFeature;
+
+public class BinaryPatternsPyramidImageFeature extends AbstyractImageFeature {
+
+}
