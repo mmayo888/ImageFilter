@@ -28,13 +28,13 @@ img_german_shorthaired_49.jpg,GERMAN_SHORTHAIRED
 ````
 
 ##Using image filters from the WEKA GUI
-Ensure that you have the ImageFilters package installed.
-Then run WEKA as normal and open an ARFF file containing image filenames (such as the one shown above).
 
-You can then select which filter you want to use to extract features from Filters/unsupervised/instance/imagefilters menu.
-
-Clicking “Apply” after will add new numeric features to the dataset, one for each feature:
-You can then remove the first attribute (the filename) and run some WEKA experiments on the dataset.
+1. Ensure that you have the ImageFilters package installed.
+2. Then run WEKA as normal and open an ARFF file containing image filenames (such as the one shown above).
+3. You can then select which filter you want to use to extract features from Filters/unsupervised/instance/imagefilters menu.
+4. The filter contains a setting for this directory contaioning the images -- set this to the correct location for your images.
+5. Clicking “Apply” after will add new numeric features to the dataset, one for each feature.
+6. You can then remove the first attribute (the filename) and run some WEKA experiments on the dataset.
 
 ##Using image filters from the command line
 All image filters can be run from the command line.
