@@ -40,7 +40,6 @@ public abstract class AbstractImageFilter extends SimpleBatchFilter {
 			throws IOException, ClassNotFoundException {
 		out.defaultWriteObject();
 		featuresClass = features.getClass().getName();
-		if (getDebug())
 		System.err
 				.println("AbstractImageFilter:: custom writeObject method called, saving features' classname as "
 						+ featuresClass);
@@ -54,7 +53,6 @@ public abstract class AbstractImageFilter extends SimpleBatchFilter {
 		if (featuresClass != null) {
 			features = (LireFeature) Class.forName(featuresClass)
 					.getConstructor().newInstance();
-			if (getDebug())
 			System.err
 					.println("AbstractImageFilter:: custom readObject method called, restoring features' by instantiating class "
 							+ featuresClass);
