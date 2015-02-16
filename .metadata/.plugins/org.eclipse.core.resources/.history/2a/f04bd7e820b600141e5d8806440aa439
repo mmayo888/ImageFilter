@@ -1,0 +1,39 @@
+package weka.filters.unsupervised.instance.imagefilter;
+
+import java.awt.image.BufferedImage;
+
+import weka.filters.unsupervised.instance.imagefilter.serializableLIREclasses.SimpleColorHistogram;
+
+public class SimpleColorHistogramFilter extends AbstractImageFilter {
+
+	private static final long serialVersionUID = -7390749464085428280L;
+	
+	private SimpleColorHistogram features;
+
+	public String globalInfo() {
+		return "A batch filter for extracting color histogram feature from images.";
+	}
+
+	public SimpleColorHistogramFilter() {
+		super();
+		features = new SimpleColorHistogram();
+	}
+
+	protected int getNumFeatures() {
+		return features.getDoubleHistogram().length;
+	}
+
+	protected String getFeatureNamePrefix() {
+		return features.getFeatureName();
+	}
+
+	protected double[] getFeatures(BufferedImage img) {
+		features.extract(img);
+		return features.getDoubleHistogram();
+	}
+
+	public static void main(String[] args) {
+		runFilter(new SimpleColorHistogramFilter(), args);
+	}
+	
+}

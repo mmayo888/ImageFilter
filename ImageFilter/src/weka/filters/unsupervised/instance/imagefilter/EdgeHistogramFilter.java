@@ -8,8 +8,6 @@ public class EdgeHistogramFilter extends AbstractImageFilter {
 
 	private static final long serialVersionUID = 7560143299904308904L;
 	
-	private EdgeHistogram features;
-
 	public String globalInfo() {
 		return "A batch filter for extracting MPEG7 edge histogram features from images.";
 	}

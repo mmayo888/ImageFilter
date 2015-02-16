@@ -8,8 +8,6 @@ public class JpegCoefficientFilter extends AbstractImageFilter {
 
 	private static final long serialVersionUID = 3673433053794040922L;
 
-	private JpegCoefficientHistogram features;
-
 	public String globalInfo() {
 		return "A batch filter for extracting JPEG coefficients from images.";
 	}

@@ -8,8 +8,6 @@ public class FCTHFilter extends AbstractImageFilter {
 
 	private static final long serialVersionUID = -3726936859958137484L;
 	
-	private FCTH features;
-
 	public String globalInfo() {
 		return "A batch filter for extracting FCTH color features from images.";
 	}

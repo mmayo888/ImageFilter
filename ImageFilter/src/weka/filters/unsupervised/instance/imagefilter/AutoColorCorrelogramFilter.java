@@ -8,8 +8,6 @@ public class AutoColorCorrelogramFilter extends AbstractImageFilter {
 
 	private static final long serialVersionUID = 4083293550806621676L;
 	
-	private AutoColorCorrelogram features;
-
 	public String globalInfo() {
 		return "A batch filter for extracting the autocorrelogram based on color feature from images.";
 	}

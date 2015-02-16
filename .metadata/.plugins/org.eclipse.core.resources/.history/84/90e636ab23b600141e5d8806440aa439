@@ -1,0 +1,11 @@
+package weka.filters.unsupervised.instance.imagefilter;
+
+import java.io.Serializable;
+
+
+
+public interface LireFeature extends net.semanticmetadata.lire.imageanalysis.LireFeature, Serializable {
+
+	
+
+}

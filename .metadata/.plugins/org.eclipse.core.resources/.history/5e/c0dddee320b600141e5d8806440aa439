@@ -1,0 +1,10 @@
+package weka.filters.unsupervised.instance.imagefilter.serializableLIREclasses;
+
+import java.io.Serializable;
+
+public class AutoColorCorrelogram extends net.semanticmetadata.lire.imageanalysis.AutoColorCorrelogram
+implements Serializable {
+
+	private static final long serialVersionUID = 155695886668558703L;
+
+}

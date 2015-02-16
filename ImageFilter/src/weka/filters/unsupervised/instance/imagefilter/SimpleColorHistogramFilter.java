@@ -8,8 +8,6 @@ public class SimpleColorHistogramFilter extends AbstractImageFilter {
 
 	private static final long serialVersionUID = -7390749464085428280L;
 	
-	private SimpleColorHistogram features;
-
 	public String globalInfo() {
 		return "A batch filter for extracting color histogram feature from images.";
 	}

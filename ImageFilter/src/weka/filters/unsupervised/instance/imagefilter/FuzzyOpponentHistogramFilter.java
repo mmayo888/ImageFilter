@@ -9,8 +9,6 @@ public class FuzzyOpponentHistogramFilter extends AbstractImageFilter {
 
 	private static final long serialVersionUID = 13532128033291482L;
 
-	private FuzzyOpponentHistogram features;
-	
 	public String globalInfo() {
 		return "A batch filter for extracting the fuzzy opponent histogram from images.";
 	}	

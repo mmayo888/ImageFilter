@@ -11,16 +11,17 @@
 <fullyQualifiedTypeName name="java.util.Enumeration"/>
 <fullyQualifiedTypeName name="weka.core.Option"/>
 <fullyQualifiedTypeName name="weka.core.Utils"/>
-<fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.LireFeature"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.PHOG"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.BinaryPatternsPyramid"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.Gabor"/>
 <fullyQualifiedTypeName name="com.stromberglabs.jopensurf.Surf"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.SurfFeature"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.FuzzyOpponentHistogram"/>
-<fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.SimpleColorHistogram"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.AutoColorCorrelogram"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.FCTH"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.JCD"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.JpegCoefficientHistogram"/>
+<fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.SimpleColorHistogram"/>
+<fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.LireFeature"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
 </qualifiedTypeNameHistroy>

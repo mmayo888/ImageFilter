@@ -1,0 +1,25 @@
+package weka.filters.unsupervised.instance.imagefilter;
+
+import java.awt.image.BufferedImage;
+import java.io.Serializable;
+
+public class SerializableLIREFeature<T> extends AbstractImageFilter implements
+		Serializable {
+
+	private static final long serialVersionUID = -988253617037816630L;
+
+	protected int getNumFeatures() {
+		return 0;
+	}
+
+	@Override
+	protected String getFeatureNamePrefix() {
+		return null;
+	}
+
+	@Override
+	protected double[] getFeatures(BufferedImage img) {
+		return null;
+	}
+
+}

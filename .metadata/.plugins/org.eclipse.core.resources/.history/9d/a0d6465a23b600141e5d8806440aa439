@@ -1,0 +1,6 @@
+
+public interface SerializableLIREFeature extends LireFeature, Serializable {
+
+	
+
+}

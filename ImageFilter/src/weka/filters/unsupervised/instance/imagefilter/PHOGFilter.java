@@ -8,8 +8,6 @@ public class PHOGFilter extends AbstractImageFilter {
 
 	private static final long serialVersionUID = 9144122420251148032L;
 
-	private PHOG features;
-
 	public String globalInfo() {
 		return "A batch filter for extracting PHOG features from images.";
 	}

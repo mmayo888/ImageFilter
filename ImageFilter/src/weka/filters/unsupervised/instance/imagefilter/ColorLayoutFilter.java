@@ -9,8 +9,6 @@ public class ColorLayoutFilter extends AbstractImageFilter {
 
 	private static final long serialVersionUID = 3969180123053302460L;
 
-	private ColorLayout features;
-	
 	public String globalInfo() {
 		return "A batch filter for extracting MPEG7 color layout features from images.";
 	}	

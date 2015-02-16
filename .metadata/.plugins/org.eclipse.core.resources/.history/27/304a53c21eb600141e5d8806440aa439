@@ -1,0 +1,7 @@
+package weka.filters.unsupervised.instance.imagefilter.serializableLIREclasses;
+
+import net.semanticmetadata.lire.imageanalysis.SimpleColorHistogram;
+
+public class SimpleColorHistogram extends SimpleColorHistogram {
+
+}
