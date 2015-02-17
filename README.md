@@ -77,7 +77,7 @@ You may also want to use the “RemoveType” filter to delete the filename stri
 
 For example:
 ````
-java -cp classpath_to_weka weka.filters.unsupervised.instance.imagefilter.PHOGFilter -i dogs/dogs.arff -D /dogs/ -o dogs_features.arff
+java -cp classpath_to_weka weka.filters.unsupervised.instance.imagefilter.PHOGFilter -i dogs/dogs.arff -D dogs/ -o dogs_features.arff
 java -cp classpath_to_weka weka.filters.unsupervised.attribute.RemoveType -T string -i dogs_features.arff -o dogs_features_nostrings.arff
 ````
 
