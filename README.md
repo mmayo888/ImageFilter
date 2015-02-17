@@ -4,11 +4,17 @@ Steps required to perform image classification in WEKA:
 
 ###1. Install the Image Filters Package
 
-2. Download some images
+Run WEKA, and from the GUI menu, select Tools—>Package Manager.
 
-3. Create an ARFF file containing the image labels
+When the Package Manager appears, find the package “imageFilters” in the list and click Install.
 
-4. Running an experiment in the WEKA GUI
+###2. Download some images
+
+You need to put all your images in the *same directory*.
+
+###3. Create an ARFF file containing the image labels
+
+###4. Run an experiment in the WEKA GUI
 
 ###Original sources:
 * LIRE 0.9.5 https://code.google.com/p/lire/
