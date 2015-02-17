@@ -64,6 +64,23 @@ You will probably need to remove the filename attribute first, however, as strin
 
 A second, harder image classification dataset concerning with distinguishing between two different species of [dogs](https://github.com/mmayo888/ImageFilter/raw/master/dogs.zip) is also available.
 
+###6. Running image filters from the command line
+
+All of the image filters can be run easily from the command line.
+You need to provide several things on the command line, namely:
+* the class path to your WEKA install
+* the ARFF file containing the filenames and image labels, which is specified by the “-i” option
+* the directory containing the images, specified by the “-D” option
+* an ARFF file that you want the output written to, specified by the “-o” option.
+
+You may also want to use the “RemoveType” filter to delete the filename string attribute after filtering.
+
+For example:
+````
+java -cp classpath_to_weka weka.filters.unsupervised.instance.imagefilter.PHOGFilter -i dogs/dogs.arff -D /dogs/ -o dogs_features.arff
+java -cp classpath_to_weka weka.filters.unsupervised.attribute.RemoveType -T string -i dogs_features.arff -o dogs_features_nostrings.arff
+````
+
 ###Original sources:
 * LIRE 0.9.5 https://code.google.com/p/lire/
 * WEKA 3.7.12 http://www.cs.waikato.ac.nz/ml/weka/
