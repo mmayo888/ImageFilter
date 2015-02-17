@@ -8,9 +8,13 @@ Run WEKA, and from the GUI menu, select Tools—>Package Manager.
 
 When the Package Manager appears, find the package “imageFilters” in the list and click Install.
 
+Restart WEKA.
+
 ###2. Download some images
 
 You need to put all your images in the *same directory*.
+
+For example, if you download the file [butterfly_vs_owl.zip](), you will find one directory containing 99 images.
 
 ###3. Create an ARFF file containing the image labels
 
