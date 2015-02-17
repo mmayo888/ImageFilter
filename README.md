@@ -40,7 +40,29 @@ owl003.jpg,OWL
 owl004.jpg,OWL
 ```` 
 
-###4. Run an experiment in the WEKA GUI
+###4. Filter the images in the WEKA GUI
+
+Open your ARFF file in the WEKA Explorer. If you are using the [butterfly_vs_owl.arff](https://github.com/mmayo888/ImageFilter/blob/master/data/butterfly_vs_owl/butterfly_vs_owl.arff) example, you will see that is contains two attributes: filename and class.
+
+Select an image filter from the Filter Choose button.
+The image filters can be found in filters/unsupervised/instance/attribute, and there should be ten of them.
+The filter “ColorLayoutFilter” is a good one to start with.
+
+Open the filter’s setting and set the “imageDirectory” field to the directory containing your images.
+
+Click Apply.
+
+If WEKA can find all the image files and there are no other errors, then you should see 34 new attributes (named “MPEG-7 Color Layout1”, “MPEG-7 Color Layout2”, etc) added to the dataset. If you examine the new attributes, you should see that they are all numeric attributes.
+
+Congratulations, you have just filtered an image dataset!
+
+###5. Run an experiment in the WEKA GUI
+
+You can now save the filtered dataset as a normal WEKA ARFF file (preferably with a different name to the original ARFF, e.g. butterfly_vs_owl_features.arff) and run experiments as normal in WEKA.
+
+You will probably need to remove the filename attribute first, however, as string attributes are likely to cause problems for many WEKA classifiers.
+
+A second, harder image classification dataset concerning with distinguishing between two different species of [dogs](https://github.com/mmayo888/ImageFilter/raw/master/dogs.zip) is also available.
 
 ###Original sources:
 * LIRE 0.9.5 https://code.google.com/p/lire/
