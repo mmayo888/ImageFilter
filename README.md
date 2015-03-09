@@ -77,12 +77,11 @@ You may also want to use the “RemoveType” filter to delete the filename stri
 
 For example:
 ````
-java -cp classpath_to_weka weka.filters.unsupervised.instance.imagefilter.PHOGFilter -i dogs/dogs.arff -D dogs/ -o dogs_features.arff
-java -cp classpath_to_weka weka.filters.unsupervised.attribute.RemoveType -T string -i dogs_features.arff -o dogs_features_nostrings.arff
+java -cp classpath_to_weka weka.filters.unsupervised.instance.imagefilter.PHOGFilter -i data/butterfly_vs_owl/butterfly_vs_owl.arff -D data/butterfly_vs_owl/ -o features.arff
+java -cp classpath_to_weka weka.filters.unsupervised.attribute.RemoveType -T string -i features.arff -o features_nostrings.arff
 ````
 
 ###Sources & References:
 * LIRE 0.9.5 https://code.google.com/p/lire/
 * WEKA 3.7.12 http://www.cs.waikato.ac.nz/ml/weka/
 * Butterfly & birds images http://www-cvr.ai.uiuc.edu/ponce_grp/data/
-* Face Image Project http://www.openu.ac.il/home/hassner/Adience/data.html
