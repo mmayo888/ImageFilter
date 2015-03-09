@@ -81,7 +81,8 @@ java -cp classpath_to_weka weka.filters.unsupervised.instance.imagefilter.PHOGFi
 java -cp classpath_to_weka weka.filters.unsupervised.attribute.RemoveType -T string -i dogs_features.arff -o dogs_features_nostrings.arff
 ````
 
-###Original sources:
+###Sources & References:
 * LIRE 0.9.5 https://code.google.com/p/lire/
 * WEKA 3.7.12 http://www.cs.waikato.ac.nz/ml/weka/
 * Butterfly & birds images http://www-cvr.ai.uiuc.edu/ponce_grp/data/
+* Face Image Project http://www.openu.ac.il/home/hassner/Adience/data.html
