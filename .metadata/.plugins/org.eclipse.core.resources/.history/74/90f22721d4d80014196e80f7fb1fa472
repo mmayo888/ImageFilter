@@ -30,8 +30,8 @@ public abstract class AbstractImageFilter extends SimpleBatchFilter {
 	// Flag indicating whether or not to cache image features
 	private boolean cacheImageFeatures = false;
 	
-	// And the cache itself, static since we want it shared across all invocations of the filter
-	private static Hashtable<String,double[]> featureCache=null;
+	// And the cache itself
+	private Hashtable<String,double[]> featureCache=null;
 	
 	// Reference to a LireFeature object that is used to extract features
 	// Unfortunately in the current version of LIRE the feature extraction
@@ -120,21 +120,18 @@ public abstract class AbstractImageFilter extends SimpleBatchFilter {
 						"ImageFilter Exception: was unable to read file "
 								+ filename + "!");
 			}
-			// create a key for the image based on full file path
-			String key=getClass().getName()+"_"+imageDirectory+"/"+filename;
 			// extract features from the buffered image
-			double[] features;
-			if (featureCache!=null && featureCache.containsKey(key))
-				features = featureCache.get(key);
-			else
-				features = getFeatures(img);
+			double[] features = getFeatures(img);
 			// optionally cache the features
 			if (cacheImageFeatures) {
 				// create the cache if its not there already
 				if (featureCache==null)
 					featureCache=new Hashtable<String,double[]>();
+				// create the key
+				String key=imageDirectory+"/"+filename;
 				// add an element to the cache
 				featureCache.put(key,features);
+				System.out.println(featureCache.size());
 			}
 			// create the final feature vector and new instance
 			double[] values = new double[result.numAttributes()];

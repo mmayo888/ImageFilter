@@ -24,4 +24,5 @@
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.SimpleColorHistogram"/>
 <fullyQualifiedTypeName name="net.semanticmetadata.lire.imageanalysis.LireFeature"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.util.Hashtable"/>
 </qualifiedTypeNameHistroy>

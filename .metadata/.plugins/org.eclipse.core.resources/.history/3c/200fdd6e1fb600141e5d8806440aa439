@@ -1,5 +1,0 @@
-package weka.filters.unsupervised.instance.imagefilter.serializableLIREclasses;
-
-public class AutoColorCorrelogram {
-
-}

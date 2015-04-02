@@ -1,8 +1,0 @@
-package weka.filters.unsupervised.instance.imagefilter.serializableLIREclasses;
-
-import java.io.Serializable;
-
-public class BinaryPatternsPyramidFilter extends net.semanticmetadata.lire.imageanalysis.BinaryPatternsPyramidFilter
-implements Serializable {
-
-}

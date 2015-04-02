@@ -124,9 +124,9 @@ public abstract class AbstractImageFilter extends SimpleBatchFilter {
 			String key=getClass().getName()+"_"+imageDirectory+"/"+filename;
 			// extract features from the buffered image
 			double[] features;
-			if (featureCache!=null && featureCache.containsKey(key))
+			if (featureCache!=null && featureCache.containsKey(key)){
 				features = featureCache.get(key);
-			else
+			} else
 				features = getFeatures(img);
 			// optionally cache the features
 			if (cacheImageFeatures) {
