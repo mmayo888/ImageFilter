@@ -1,3 +1,0 @@
-java -cp bin/:lib/* -Xmx2g weka.Run weka.classifiers.meta.FilteredClassifier -F "weka.filters.unsupervised.instance.imagefilter.ColorLayoutFilter -D /Users/mmayo/Documents/work/ImageFilter/data/butterfly_vs_owl/" -W weka.classifiers.meta.FilteredClassifier -t "/Users/mmayo/Documents/work/ImageFilter/data/butterfly_vs_owl/butterfly_vs_owl.arff" -- -F "weka.filters.unsupervised.attribute.RemoveType -T string" -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
-java -cp bin/:lib/* -Xmx2g weka.Run weka.filters.unsupervised.instance.imagefilter.ColorLayoutFilter -D /Users/mmayo/Documents/work/ImageFilter/data/butterfly_vs_owl/ -i /Users/mmayo/Documents/work/ImageFilter/data/butterfly_vs_owl/butterfly_vs_owl.arff
-java -cp bin/:lib/* -Xmx2g weka.gui.GUIChooser &
