@@ -9,7 +9,11 @@ public class JpegCoefficientFilter extends AbstractImageFilter {
 	private static final long serialVersionUID = 3673433053794040922L;
 
 	public String globalInfo() {
-		return "A batch filter for extracting JPEG coefficients from images.";
+		return "A batch filter for extracting JPEG coefficients from images. "
+				+" Converting an image to the JPEG file format discards information that it imperceptible to humans "
+				+" and in the process produces a sequences of quantized coefficients that are part of the compressed "
+				+" representation of the image."
+				+" These coefficients are the features computed by this filter.";
 	}
 
 	public JpegCoefficientFilter() {

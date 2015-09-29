@@ -9,7 +9,9 @@ public class EdgeHistogramFilter extends AbstractImageFilter {
 	private static final long serialVersionUID = 7560143299904308904L;
 	
 	public String globalInfo() {
-		return "A batch filter for extracting MPEG7 edge histogram features from images.";
+		return "A batch filter for extracting MPEG7 edge histogram features from images."+
+	" Edges are the lines or discontinuities in an image. "+
+	" An edge histrogram is therefore a summary of the directions that the edges are going in across an image.";
 	}
 
 	public EdgeHistogramFilter() {

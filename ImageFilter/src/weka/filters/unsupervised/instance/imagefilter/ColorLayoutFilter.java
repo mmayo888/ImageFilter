@@ -10,7 +10,9 @@ public class ColorLayoutFilter extends AbstractImageFilter {
 	private static final long serialVersionUID = 3969180123053302460L;
 
 	public String globalInfo() {
-		return "A batch filter for extracting MPEG7 color layout features from images.";
+		return "A batch filter for extracting MPEG7 color layout features from images."+
+	" This filter divides an image into 64 blocks and computes the average color for each block,"+
+	" and then features are calculated from the averages.";
 	}	
 	public ColorLayoutFilter(){
 		super();

@@ -9,7 +9,8 @@ public class GaborFilter extends AbstractImageFilter {
 	private static final long serialVersionUID = -7632510789844493778L;
 	
 	public String globalInfo() {
-		return "A batch filter for extracting Gabor texture features from images.";
+		return "A batch filter that uses a Gabor wavelet to extract texture features from images."+
+	" Gabor filters are very common in computer vision, and the features should be invariant to rotation.";
 	}
 
 	public GaborFilter() {

@@ -9,7 +9,9 @@ public class AutoColorCorrelogramFilter extends AbstractImageFilter {
 	private static final long serialVersionUID = 4083293550806621676L;
 	
 	public String globalInfo() {
-		return "A batch filter for extracting the autocorrelogram based on color feature from images.";
+		return "A batch filter for calculating a color correlogram from an image."
+				+ " A color correlogram encodes the spatial correlation of colors in an image,"
+				+ " and is an effective feature that is robust to changes in viewing position and camera zoom.";
 	}
 
 	public AutoColorCorrelogramFilter() {
