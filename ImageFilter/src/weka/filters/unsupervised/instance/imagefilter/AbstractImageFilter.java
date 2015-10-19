@@ -24,7 +24,7 @@ public abstract class AbstractImageFilter extends SimpleBatchFilter {
 	private static final long serialVersionUID = -407198591679465350L;
 
 	// Directory name containing the images
-	private String imageDirectory = System.getProperty("user.dir");
+	private String imageDirectory = System.getProperty("last.dir", System.getProperty("user.dir"));
 
 	// Reference to a LireFeature object that is used to extract features
 	// Unfortunately in the current version of LIRE the feature extraction
@@ -164,6 +164,7 @@ public abstract class AbstractImageFilter extends SimpleBatchFilter {
 
 	public void setImageDirectory(String imageDirectory) {
 		this.imageDirectory = imageDirectory;
+		System.setProperty("last.dir", imageDirectory);
 	}
 
 	public String[] getOptions() {
