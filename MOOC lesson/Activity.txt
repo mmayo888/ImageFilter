@@ -1,29 +1,28 @@
 1. Install the imageFilters package using the WEKA package manager.
 
-2. Download the vehicles dataset:
-	https://github.com/mmayo888/ImageFilter/raw/master/data/vehicles.zip
+2. Open the data folder in the package. You will find a folder called vehicles that contains the images for this activity.
 
-3. Unzip the file and open vehicle_images.arff in WEKA.
-
-4. Choose the PHOGFilter from the unsupervised/instances/imageFilters menu and filter the image dataset set. (Note: you will have to make sure that the imageDirectory property of the filter is set correctly, or WEKA won’t be able to find the images!)
+3. Choose the PHOGFilter from the unsupervised/instances/imageFilters menu and filter the image dataset set. (Note: you will have to make sure that the imageDirectory property of the filter is set correctly, or WEKA won’t be able to find the images!)
 
 	Q1: how many features are extracted? (A: 631)
 
-5. Remove the first string attribute and then run three 10 fold CV experiments on the filtered dataset using J48, Naive Bayes and SMO.
+4. Remove the first string attribute and then run three 10 fold CV experiments on the filtered dataset using J48, Naive Bayes and SMO.
 
 	Q2: which classifier has the highest accuracy and what is the highest accuracy? (A: Naive Bayes, 73.33%)
 
-6. Undo the changes to the dataset and then repeat steps 4 and 5, but this time use the ColorLayout filter.
+5. Undo the changes to the dataset and then repeat steps 4 and 5, but this time use the ColorLayout filter.
 
 	Q3: which classifier has the highest accuracy and what is the highest accuracy now? (A: NB and SMO tie at 71.67%)
 
-7. Undo the changes again, and this time apply BOTH the EdgeHistogram Filter and the ColorLayout Filter in sequence, so that the current dataset contains both sets of features. Rerun your experiments.
+6. Undo the changes again, and this time apply BOTH the EdgeHistogram Filter and the ColorLayout Filter in sequence, so that the current dataset contains both sets of features. Rerun your experiments.
 
 	Q4: what is the best classifier/accuracy now? (A: SMO, 91.67%)
+
 	Q5: of the three classes, which has the least misclassifications? (A: TRAIN) 
 
-8. Its interesting to look at the usefulness of the image features. With your EdgeHistogram/ColorLayout dataset still open, go to “Select Attributes” and use the InfoGainAttributeEval/Ranker combination to rank the attributes.
+7. Its interesting to look at the usefulness of the image features. With your EdgeHistogram/ColorLayout dataset still open, go to “Select Attributes” and use the InfoGainAttributeEval/Ranker combination to rank the attributes.
 
 	Q6: One type of feature is clearly the most useful. Which one? (A: the Edge Histogram).
+
 	Q7: Look at the images in the dataset. Is there a reason for your answer to Q6? (A: yes — edges describe the distinct shapes of the cars/planes/trains but there are not distinctive colours within each class)
 
