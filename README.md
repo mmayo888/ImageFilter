@@ -14,8 +14,9 @@ Restart WEKA.
 
 You need to put all your images in the *same directory*.
 
-For example, if you download the file [butterfly_vs_owl.zip](https://github.com/mmayo888/ImageFilter/raw/master/butterfly_vs_owl.zip),
-you will find one directory containing 100 images. 50 of those images depict monarch butterflies; 50 are images of owls.
+For example, if you look into the imageFilter’s data directory,
+there is a directory called butterfly_vs_owl with one hundred images. 
+Fifty of those images depict monarch butterflies; Fifity are images of owls.
 
 ###3. Create an ARFF file containing the image labels
 
@@ -62,7 +63,7 @@ You can now save the filtered dataset as a normal WEKA ARFF file (preferably wit
 
 You will probably need to remove the filename attribute first, however, as string attributes are likely to cause problems for many WEKA classifiers.
 
-A second, harder image classification dataset concerning with distinguishing between two different species of [dogs](https://github.com/mmayo888/ImageFilter/raw/master/dogs.zip) is also available.
+A second, harder image classification dataset concerned with distinguishing between three different types of vehicle is also available in the package’s data directory.
 
 ###6. Running image filters from the command line
 
